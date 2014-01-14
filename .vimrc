@@ -11,5 +11,9 @@ else
 endif
 set cursorline
 set mouse=a
+
+map - <C-W><
+map + <C-W>>
+
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
