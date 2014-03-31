@@ -15,5 +15,11 @@ set mouse=a
 map - <C-W><
 map + <C-W>>
 
+map ; 5j
+map , 5k
+
+nnoremap j gj
+nnoremap k gk
+
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
