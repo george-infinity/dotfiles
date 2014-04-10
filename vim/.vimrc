@@ -21,5 +21,15 @@ map , 5k
 nnoremap j gj
 nnoremap k gk
 
+function! Tab_Or_Complete()
+    if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
+        return "\<C-N>"
+    else
+        return "\<Tab>"
+    endif
+endfunction
+
+inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
