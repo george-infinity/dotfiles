@@ -29,7 +29,7 @@ function! Tab_Or_Complete()
     endif
 endfunction
 
-inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+inoremap <S-Tab> <C-R>=Tab_Or_Complete()<CR>
 
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
