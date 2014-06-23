@@ -1,5 +1,8 @@
 # .bash_profile
 
+# Puppet will overwrite the default shell specified in /etc/passwd
+zsh
+
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
