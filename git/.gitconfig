@@ -45,3 +45,5 @@
     insteadOf = gh:
 [url "git@github.com:george-infinity/"]
     insteadOf = ghc:
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
