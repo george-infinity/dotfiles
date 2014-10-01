@@ -1,0 +1,3 @@
+# Should be sourced using '.' when calling script e.g. . ~/scripts/proxyoff
+export http_proxy=
+export https_proxy=
