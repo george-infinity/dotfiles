@@ -44,7 +44,9 @@
 [url "git@github.com:"]
     insteadOf = gh:
 [url "git@github.com:george-infinity/"]
-    insteadOf = ghc:
+    insteadOf = ghg:
+[url "git@github.com:infinitytracking/"]
+    insteadOf = ghi:
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 [push]
