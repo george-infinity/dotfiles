@@ -1,3 +1,0 @@
-# Should be sourced using '.' when calling script e.g. . ~/scripts/proxyon
-export http_proxy=http://proxyout.infinity.local:8080
-export https_proxy=http://proxyout.infinity.local:8080
