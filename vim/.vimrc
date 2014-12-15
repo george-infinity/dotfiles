@@ -25,9 +25,16 @@ nnoremap k gk
 
 nnoremap Q <nop>
 
-map <C-f> :FufFile<CR>
-map <C-b> :FufBuffer<CR>
+" Fuzzy finder key maps
+" map <C-f> :FufFile<CR>
+" map <C-b> :FufBuffer<CR>
+
+" CtrlP key maps
+map <C-f> :CtrlP<CR>
+map <C-b> :CtrlPBuffer<CR>
+
 map <C-n> :NERDTree<CR>
+map <C-h> :browse oldfiles<CR>
 
 function! Tab_Or_Complete()
     if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
