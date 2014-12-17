@@ -1,6 +1,14 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+#Detect OS
+if [[ `uname` == "Darwin" ]]
+    then
+        export OSX=1
+    else
+        export OSX=0
+fi
+
 # Set name of the theme to load.
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="eastwood"

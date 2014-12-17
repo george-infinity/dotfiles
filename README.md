@@ -12,3 +12,8 @@ For use with GNU Stow
 
 Faster key repeat
 ```defaults write NSGlobalDomain KeyRepeat -int 0```
+
+####Homebrew
+
+* stow
+* coreutils
