@@ -16,8 +16,12 @@ ZSH_THEME="eastwoodcustom"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-#go proxy settings
-source .private-settings
+
+if [[ -f ~/.private-settings ]]
+    then
+        #go proxy settings
+        source .private-settings
+fi
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GOPATH=/home/sites/go
@@ -27,9 +31,6 @@ export PATH=$PATH:$GOPATH/bin
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-
-alias go='http_proxy=proxyout.infinity.local:8080 https_proxy=proxyout.infinity.local:8080 go'
-alias godep='http_proxy=proxyout.infinity.local:8080 https_proxy=proxyout.infinity.local:8080 godep'
 
 #Go Format - Format code
 alias gof='godep go fmt ./...'
