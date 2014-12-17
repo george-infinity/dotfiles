@@ -15,5 +15,5 @@ Faster key repeat
 
 ####Homebrew
 
+* grc
 * stow
-* coreutils
