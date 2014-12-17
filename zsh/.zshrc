@@ -11,7 +11,7 @@ fi
 
 # Set name of the theme to load.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="eastwood"
+ZSH_THEME="eastwoodcustom"
 
 plugins=(git)
 
