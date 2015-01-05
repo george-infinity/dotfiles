@@ -1,2 +1,7 @@
 *.swp
 vendor/
+custom/extensions/ict-ext-igrp_1/ict-ext-igrp_1-test.xml
+sounds/confirm-option.wav
+sounds/confirm-value.wav
+sounds/enter-option.wav
+sounds/enter-value.wav
