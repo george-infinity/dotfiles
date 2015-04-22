@@ -23,6 +23,8 @@ if [[ -f ~/.private-settings ]]
         source .private-settings
 fi
 
+unsetopt AUTO_CD
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GOPATH=/home/sites/go
 export GOROOT=/usr/local/go
