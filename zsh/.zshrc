@@ -51,6 +51,7 @@ alias grep='grep -rn --color'
 if [[ "$OSX" == "1" ]]
     then
         alias ls='ls -lahG'
+        alias spotify="osascript ~/dotfiles/osx/SpotifyControl.scpt" #https://github.com/dronir/SpotifyControl
     else
         alias ls='ls -lah --color=auto'
 fi
