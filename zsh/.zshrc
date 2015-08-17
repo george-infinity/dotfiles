@@ -29,6 +29,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GOPATH=/home/sites/go
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOPATH/bin
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/
 
 alias rm='rm -i'
 alias cp='cp -i'
