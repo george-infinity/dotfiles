@@ -1,14 +1,14 @@
 syntax enable
 
-colorscheme jellybeans
+" colorscheme jellybeans
+" set cursorline
+" set colorcolumn=80
 set number
 set expandtab
 set tabstop=4
 set smartindent
 set shiftwidth=4
-set cursorline
 set mouse=a
-set colorcolumn=80
 set backspace=2
 set laststatus=2
 set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
