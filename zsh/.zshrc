@@ -46,7 +46,7 @@ alias goba="godep go fmt ./... && godep go install -a -race ./..."
 
 alias gl='git log --oneline -n 20'
 alias tail='grc tail'
-alias grep='grep -rn --color'
+alias grep='grep -n --color'
 
 #OS specific aliases
 if [[ "$OSX" == "1" ]]
