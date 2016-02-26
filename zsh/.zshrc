@@ -39,8 +39,8 @@ alias mv='mv -i'
 #Go Format - Format code
 alias gof='godep go fmt ./...'
 
-alias gob='go install -race -v $(go list ./... | grep -v /vendor/) && go fmt ./...'
-alias goba='go install -race -v -a $(go list ./... | grep -v /vendor/) && go fmt ./...'
+alias gob='go install -race -v $(go list ./... | /bin/grep -v /vendor/) && go fmt ./...'
+alias goba='go install -race -v -a $(go list ./... | /bin/grep -v /vendor/) && go fmt ./...'
 
 alias gl='git log --oneline -n 20'
 alias tail='grc tail'
