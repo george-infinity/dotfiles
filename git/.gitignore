@@ -1,5 +1,4 @@
 *.swp
-vendor/
 custom/extensions/ict-ext-igrp_1/ict-ext-igrp_1-test.xml
 custom/extensions/ict-ext-igrp_19/ict-ext-igrp_19-test*
 sounds/confirm-option.wav
