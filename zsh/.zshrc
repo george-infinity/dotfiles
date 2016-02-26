@@ -39,11 +39,8 @@ alias mv='mv -i'
 #Go Format - Format code
 alias gof='godep go fmt ./...'
 
-#Go Build - Format, Build and Install
-alias gob="godep go fmt ./... && godep go install -race ./..."
-
-#Go Build All - Force rebuild and install - useful if a dependency has changed but your program has not
-alias goba="godep go fmt ./... && godep go install -a -race ./..."
+alias gob='go install -race -v $(go list ./... | grep -v /vendor/) && go fmt ./...'
+alias goba='go install -race -v -a $(go list ./... | grep -v /vendor/) && go fmt ./...'
 
 alias gl='git log --oneline -n 20'
 alias tail='grc tail'
