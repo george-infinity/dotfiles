@@ -1,6 +1,7 @@
 [user]
     name = George Arscott
     email = george.arscott@infinitycloud.com
+	signingkey = B0A3885C
 [color]
     ui = auto
 [color "branch"]
