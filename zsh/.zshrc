@@ -31,7 +31,7 @@ export GOSRC=/home/sites/go/src/github.com/
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOPATH/bin
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/
-export GPG_TTY='tty'
+export GPG_TTY=$(tty)
 
 alias rm='rm -i'
 alias cp='cp -i'
