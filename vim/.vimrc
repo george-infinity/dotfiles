@@ -1,4 +1,5 @@
 " Options
+syntax enable
 colorscheme monokai
 set number
 set expandtab
@@ -17,4 +18,9 @@ Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " Key mappings
-:map <C-n> :NERDTree<CR>
+map <C-n> :NERDTree<CR>
+map - <C-w><
+map = <C-w>>
+
+" Disable Ex-mode
+noremap Q <nop>
