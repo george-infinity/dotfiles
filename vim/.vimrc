@@ -18,9 +18,9 @@ Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " Key mappings
-map <C-n> :NERDTree<CR>
-map - <C-w><
-map = <C-w>>
+nmap <C-n> :NERDTree<CR>
+nmap - <C-w><
+nmap = <C-w>>
 
 " Disable Ex-mode
 noremap Q <nop>
