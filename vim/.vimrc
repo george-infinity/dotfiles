@@ -24,3 +24,10 @@ nmap = <C-w>>
 
 " Disable Ex-mode
 noremap Q <nop>
+
+" Autoload NERDTree
+autocmd vimenter * :NERDTreeToggle
+if argc() > 0
+    " Move the focus to the right window if we're editing a file
+    autocmd VimEnter * wincmd l
+endif
