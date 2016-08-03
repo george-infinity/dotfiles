@@ -1,6 +1,6 @@
 syntax enable
 
-" colorscheme jellybeans
+colorscheme monokai
 " set cursorline
 " set colorcolumn=80
 set number
