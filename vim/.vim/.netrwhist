@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/root'
-let g:netrw_dirhist_2='/home/sites'
-let g:netrw_dirhist_3='/etc/infinity'
-let g:netrw_dirhist_4='/home/sites/ict-configapi/classes/V2'
-let g:netrw_dirhist_5='scp://root@dn.dev.infinity.local//home/sites/icc/'
-let g:netrw_dirhist_6='scp://root@dn.dev.infinity.local//home/sites/icc/Icc/'
