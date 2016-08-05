@@ -47,3 +47,6 @@ if argc() > 0
         autocmd VimEnter * wincmd l
     endif
 endif
+
+" Exit if NERDTree is last window
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
