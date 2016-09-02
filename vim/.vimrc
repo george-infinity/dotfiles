@@ -14,6 +14,8 @@ set wildmenu
 set autochdir
 set clipboard=unnamed
 
+let mapleader = ","
+
 " vim-plug
 call plug#begin()
 " Clone git repositories over ssh
@@ -31,6 +33,10 @@ nmap <C-t> :TagbarToggle<CR>
 nmap - <C-w><
 nmap = <C-w>>
 
+" Leader mappings
+nnoremap <leader>pu :call PhpUnit(0)<CR>
+nnoremap <leader>pf :call PhpUnit(1)<CR>
+
 " Disable Ex-mode
 noremap Q <nop>
 
@@ -47,6 +53,21 @@ if argc() > 0
         autocmd VimEnter * wincmd l
     endif
 endif
+
+" Runs phpunit
+let g:startDir = getcwd()
+function PhpUnit(filter)
+    let l:fd = getcwd()
+    execute 'lcd' . fnameescape(g:startDir)
+    if a:filter
+        let pu=system('phpunit -c ' . g:startDir . '/test/unit ' . g:startDir . '/test/unit --filter ' . expand('<cword>') . ' ' . expand('%:p'))
+    else
+        let pu=system('phpunit -c ' . g:startDir . '/test/unit ' . g:startDir . '/test/unit')
+    endif
+    echo pu
+    execute 'lcd' . fnameescape(l:fd)
+echo g:startDir
+endfunction
 
 " Exit if NERDTree is last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
