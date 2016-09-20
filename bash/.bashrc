@@ -1,13 +1,9 @@
 # .bashrc
 
-# User specific aliases and functions
-
+# Custom aliases
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-
-# Custom aliases
-
 alias gl='git log --oneline -n 20'
 alias tail='grc tail'
 alias ls='ls -lah --color=auto'
@@ -16,9 +12,14 @@ alias grep='grep -rn --color'
 # Git auto-completion
 source ~/.git-completion
 
-export PATH=$PATH:/usr/local/go/bin
-export GOPATH=$HOME/go
+export GOPATH=/home/sites/go
 export PATH=$PATH:$GOPATH/bin
+
+# User specific environment and startup programs
+PATH=$PATH:$HOME/bin
+
+alias go='http_proxy=proxyout.infinity.local:8080 https_proxy=proxyout.infinity.local:8080 go'
+alias godep='http_proxy=proxyout.infinity.local:8080 https_proxy=proxyout.infinity.local:8080 godep'
 
 function current_uname {
     uname -a | cut -d ' ' -f 2 | cut -d '.' -f 1
