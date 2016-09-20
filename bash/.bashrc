@@ -32,19 +32,6 @@ function current_branch {
     fi
 }
 
-function start_colour {
-    #local CS="\e["
-    #$CS="$($CS)0;32"
-    #$CS="$($CS)m"
-
-    #echo $CS
-    echo "\e[0;32m"
-}
-
-function end_colour {
-    echo "\e[m"
-}
-
 export PS1='\e[0;32m$(current_branch)\e[m\e[0;36m[$(current_uname):$(pwd)]\e[m$ '
 export PS2='  > '
 
