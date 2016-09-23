@@ -25,6 +25,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'fatih/vim-go'
 Plug 'majutsushi/tagbar'
 Plug 'ervandew/supertab'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 " Key mappings
@@ -36,6 +37,8 @@ nmap = <C-w>>
 " Leader mappings
 nnoremap <leader>pu :call PhpUnit(0)<CR>
 nnoremap <leader>pf :call PhpUnit(1)<CR>
+nnoremap <leader>f :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
 
 " Disable Ex-mode
 noremap Q <nop>
