@@ -33,7 +33,7 @@ function current_branch {
     fi
 }
 
-export PS1='\e[0;32m$(current_branch)\e[m\e[0;36m[$(current_uname):$(pwd)]\e[m$ '
+export PS1='\[\e[0;32m\]$(current_branch)\[\e[m\e[0;36m\][$(current_uname):$(pwd)]\[\e[m\]$ '
 export PS2='  > '
 
 # Source global definitions
