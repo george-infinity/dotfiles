@@ -26,6 +26,7 @@ Plug 'fatih/vim-go'
 Plug 'majutsushi/tagbar'
 Plug 'ervandew/supertab'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Key mappings
