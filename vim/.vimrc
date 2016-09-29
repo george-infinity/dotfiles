@@ -44,6 +44,11 @@ nnoremap <leader>b :CtrlPBuffer<CR>
 " Disable Ex-mode
 noremap Q <nop>
 
+" NERDTree settings
+" https://github.com/scrooloose/nerdtree/pull/546
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
 " Autoload NERDTree
 autocmd vimenter * :NERDTreeToggle
 if argc() > 0
