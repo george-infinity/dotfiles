@@ -40,6 +40,8 @@ nnoremap <leader>pu :call PhpUnit(0)<CR>
 nnoremap <leader>pf :call PhpUnit(1)<CR>
 nnoremap <leader>f :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>j :GitGutterNextHunk<CR>
+nnoremap <leader>k :GitGutterPrevHunk<CR>
 
 " Disable Ex-mode
 noremap Q <nop>
