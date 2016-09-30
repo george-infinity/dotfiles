@@ -41,7 +41,7 @@
     format = web
     autocorrect = 1
 [github]
-    user = george-infinity
+    user = gha
     name = George Arscott
 [url "git@github.com:"]
     insteadOf = gh:
