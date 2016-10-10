@@ -13,6 +13,7 @@ set wildmode=longest,list,full
 set wildmenu
 set autochdir
 set clipboard=unnamed
+set cursorline
 
 let mapleader = ","
 
