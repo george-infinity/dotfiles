@@ -38,6 +38,7 @@ $DOTFILES/bin/gpg-agent-start.sh
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias gt='git tag | sort -V | tail'
 
 #Go Format - Format code
 alias gof='godep go fmt ./...'

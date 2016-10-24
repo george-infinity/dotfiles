@@ -14,6 +14,7 @@ set wildmenu
 set autochdir
 set clipboard=unnamed
 set cursorline
+set updatetime=250
 
 let mapleader = ","
 
@@ -53,18 +54,18 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
 " Autoload NERDTree
-autocmd vimenter * :NERDTreeToggle
-if argc() > 0
-    if isdirectory(argv(0))
-        bd
-        autocmd VimEnter * wincmd h
-        let cd_cmd = "cd " . argv(0)
-        execute cd_cmd
-    else
-        " Move the focus to the right window if we're editing a file/dir
-        autocmd VimEnter * wincmd l
-    endif
-endif
+" autocmd vimenter * :NERDTreeToggle
+" if argc() > 0
+"     if isdirectory(argv(0))
+"         bd
+"         autocmd VimEnter * wincmd h
+"         let cd_cmd = "cd " . argv(0)
+"         execute cd_cmd
+"     else
+"         " Move the focus to the right window if we're editing a file/dir
+"         autocmd VimEnter * wincmd l
+"     endif
+" endif
 
 " Runs phpunit
 let g:startDir = getcwd()
