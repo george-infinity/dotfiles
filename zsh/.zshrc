@@ -1,14 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-#Detect OS
-if [[ `uname` == "Darwin" ]]
-    then
-        export OSX=1
-    else
-        export OSX=0
-fi
-
 # Set name of the theme to load.
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="eastwoodcustom"
@@ -26,12 +18,22 @@ fi
 unsetopt AUTO_CD
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export GOPATH=/home/sites/go
-export GOSRC=/home/sites/go/src/github.com/
+
+# Go vars
+if [[ `uname -a` == "Linux gael6"* ]]
+    then
+        export GOPATH=/home/sites/go
+    else
+        export GOPATH=$HOME/go
+fi
+export GOSRC=$GOAPTH/src/github.com/
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOPATH/bin
+
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/
 export DOTFILES=$HOME/dotfiles/
+
+# GPG vars
 export GPG_TTY=$(tty)
 $DOTFILES/bin/gpg-agent-start.sh
 
@@ -51,7 +53,7 @@ alias tail='grc tail'
 alias grep='grep -n --color'
 
 #OS specific aliases
-if [[ "$OSX" == "1" ]]
+if [[ `uname` == "Darwin" ]]
     then
         alias ls='ls -lahG'
         alias spotify="osascript ~/dotfiles/osx/SpotifyControl.scpt" #https://github.com/dronir/SpotifyControl
