@@ -15,6 +15,7 @@ set autochdir
 set clipboard=unnamed
 set cursorline
 set updatetime=250
+set ruler
 
 let mapleader = ","
 
