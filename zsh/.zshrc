@@ -57,6 +57,7 @@ if [[ `uname` == "Darwin" ]]
     then
         alias ls='ls -lahG'
         alias spotify="osascript ~/dotfiles/osx/SpotifyControl.scpt" #https://github.com/dronir/SpotifyControl
+        alias vim='/usr/local/bin/vim' # homebrew override
     else
         alias ls='ls -lah --color=auto'
 fi
