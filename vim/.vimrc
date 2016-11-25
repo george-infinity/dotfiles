@@ -30,6 +30,7 @@ Plug 'majutsushi/tagbar'
 Plug 'ervandew/supertab'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 " Key mappings
@@ -85,3 +86,21 @@ endfunction
 
 " Exit if NERDTree is last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" vim-go lightline support
+" https://github.com/itchyny/lightline.vim/issues/201
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ], [ 'go' ] ]
+      \ },
+      \ 'component': {
+      \   'go': '%#goStatuslineColor#%{LightlineGo()}',
+      \ },
+      \ 'component_type': {
+      \   'go': 'raw',
+      \ },
+      \ }
+
+function! LightlineGo()
+    return exists('*go#statusline#Show') ? go#statusline#Show() : ''
+endfunction
