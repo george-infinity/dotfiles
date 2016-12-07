@@ -17,8 +17,6 @@ fi
 
 unsetopt AUTO_CD
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Go vars
 if [[ `uname -a` == "Linux gael6"* ]]
     then
@@ -26,7 +24,7 @@ if [[ `uname -a` == "Linux gael6"* ]]
     else
         export GOPATH=$HOME/go
 fi
-export GOSRC=$GOAPTH/src/github.com/
+
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOPATH/bin
 
