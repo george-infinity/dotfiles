@@ -21,8 +21,6 @@ let mapleader = ","
 
 " vim-plug
 call plug#begin()
-" Clone git repositories over ssh
-let g:plug_url_format = 'ssh://git@github.com/%s.git'
 " Plugins
 Plug 'scrooloose/nerdtree'
 Plug 'fatih/vim-go'
@@ -54,6 +52,10 @@ noremap Q <nop>
 " https://github.com/scrooloose/nerdtree/pull/546
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+
+" vim-go settings
+let g:go_fmt_command = "goimports"
+command G GoInstall
 
 " Autoload NERDTree
 " autocmd vimenter * :NERDTreeToggle
