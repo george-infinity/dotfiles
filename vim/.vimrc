@@ -29,13 +29,12 @@ Plug 'ervandew/supertab'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-vinegar'
 call plug#end()
 
 " Key mappings
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <C-t> :TagbarToggle<CR>
-nmap - <C-w><
-nmap = <C-w>>
 
 " Leader mappings
 nnoremap <leader>pu :call PhpUnit(0)<CR>
